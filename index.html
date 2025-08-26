@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form name="idk" onsubmit="ayo()">
+        Name: <input type="text" name="nvm">
+        <input type="submit">
+
+        <p id="hru"></p>
+    </form>
+
+    <script>
+        function ayo(){
+            var x = document.forms["idk"]["nvm"].value;
+            if(x == "") {
+                alert("You forgot to put the one thing you were supposed to do. >:|")
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

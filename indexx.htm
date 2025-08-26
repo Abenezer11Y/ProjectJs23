@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter a number and click okay</h2>
+    <input type="number" min="100" max="500" id="lol">
+    <button onclick="fluffy()">Okay</button>
+    <p id="error"></p>
+
+    <script>
+        function fluffy(){
+            var pew = document.getElementById("lol")
+            if(!pew.checkValidity()){
+                document.getElementById("error").innerHTML = pew.validationMessage
+            } else{
+                document.getElementById("error").innerHTML = "Input OK";
+            }
+        }
+    </script>
+</body>
+</html>
